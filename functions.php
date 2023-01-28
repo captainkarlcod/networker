@@ -6,6 +6,7 @@
  *
  * @package Networker
  */
+/*
  require '/home/admin/web/gadgetlab.space/public_html/wp-content/plugins/plugin-update-checker-master/plugin-update-checker.php';
  use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
  
@@ -14,6 +15,9 @@
 	 __FILE__,
 	 'networker-main'
  );
+*/
+
+
 update_option( 'networker_license_data', [
 	'status'          => 'active',
 	'count'           => '1',
