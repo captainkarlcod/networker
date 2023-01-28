@@ -1,0 +1,13 @@
+<wpml-config>
+	<admin-texts>
+		<key name="theme_mods_networker">
+			<key name="header_search_posts_heading" />
+			<key name="header_search_tags_heading" />
+			<key name="misc_search_placeholder" />
+			<key name="misc_label_more" />
+			<key name="post_subscribe_title" />
+			<key name="post_subscribe_text" />
+			<key name="footer_text" />
+		</key>
+	</admin-texts>
+</wpml-config>

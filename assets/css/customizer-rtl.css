@@ -1,0 +1,62 @@
+@charset "UTF-8";
+/**
+* Collapsibles
+*/
+.customize-collapsible {
+	position: relative;
+	margin: 0 -12px;
+	border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+.customize-collapsible h3 {
+	display: block;
+	position: relative;
+	margin: 0;
+	padding: 10px 14px;
+	color: #555;
+	background: white;
+	line-height: 21px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	cursor: pointer;
+}
+.customize-collapsible h3:after {
+	position: absolute;
+	top: 12px;
+	left: 14px;
+	color: #a0a5aa;
+	font: 400 20px/1 dashicons;
+	content: "";
+}
+.customize-collapsible h3:hover {
+	color: #0073aa;
+	background: #f5f5f5;
+}
+.customize-collapsible h3:hover:after {
+	color: #0073aa;
+}
+
+.customize-control-collapsed {
+	margin-bottom: 0;
+}
+.customize-control-collapsed .customize-collapsible h3:after {
+	content: "";
+}
+
+.customize-control-hidden {
+	height: 0 !important;
+	overflow: hidden !important;
+	visibility: hidden;
+}
+
+.customize-section-description-container + .customize-control-kirki-custom .customize-collapsible {
+	border-top: 0;
+}
+
+/**
+ * Sortable Field
+ */
+.customize-control-kirki-sortable ul.ui-sortable li {
+	border-color: #dbdbdb;
+}
