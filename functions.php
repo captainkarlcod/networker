@@ -257,3 +257,18 @@ require get_template_directory() . '/inc/demo-import/theme-homepages.php';
 * Theme sections.
 */
 require get_template_directory() . '/inc/demo-import/theme-sections.php';
+
+// Disable all plugin updates
+add_filter('site_transient_update_plugins', '__return_false');
+
+// Disable all theme updates
+add_filter('site_transient_update_themes', '__return_false');
+
+
+// Hide all admin notifications from plugins
+function hide_all_plugin_notifications() {
+    remove_action('admin_notices', 'update_nag', 3);
+    remove_action('admin_notices', 'maintenance_nag', 10);
+}
+add_action('admin_menu', 'hide_all_plugin_notifications');
+
